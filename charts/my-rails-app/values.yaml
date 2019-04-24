@@ -1,0 +1,34 @@
+replicaCount: 1
+
+image:
+  repository: example/rails-app
+  tag: v1.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  externalPort: 80
+  internalPort: 3001
+
+ingress:
+  enabled: false
+  annotations: {}
+  paths: []
+  hosts:
+    - chart-example.local
+  tls: []
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
