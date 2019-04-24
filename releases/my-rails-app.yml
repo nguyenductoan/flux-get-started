@@ -2,12 +2,12 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: redis
+  name: my-rails-app
   namespace: dev
   annotations:
     flux.weave.works/automated: "false"
 spec:
-  releaseName: redis
+  releaseName: my-rails-app
   chart:
     git: git@github.com:nguyenductoan/flux-get-started
     ref: master
