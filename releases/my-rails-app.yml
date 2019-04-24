@@ -16,15 +16,15 @@ spec:
     replicaCount: 1
 
     image:
-      repository: example/rails-app
-      tag: v1.1
+      repository: k8s.gcr.io/echoserver
+      tag: 1.4
       pullPolicy: IfNotPresent
 
     service:
       type: NodePort
       port: 80
       externalPort: 80
-      internalPort: 3001
+      internalPort: 8080
 
     ingress:
       enabled: false
