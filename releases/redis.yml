@@ -1,0 +1,31 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: redis
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "false"
+spec:
+  releaseName: redis
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: redis
+    version: 6.3.0
+  values:
+    enabled: true
+    image:
+      registry: docker.io
+      repository: bitnami/redis
+      tag: 4.0.13
+      pullPolicy: Always
+
+    cluster:
+      enabled: false
+      slaveCount: 1
+
+    usePassword: false
+
+    master:
+      persistence:
+        enabled: false
