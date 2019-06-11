@@ -27,11 +27,11 @@ spec:
     ##
     image:
       registry: docker.io
-      repository: bitnami/redis
+      repository: a/b/c/circleci-orbs
       ## Bitnami Redis image tag
       ## ref: https://github.com/bitnami/bitnami-docker-redis#supported-tags-and-respective-dockerfile-links
       ##
-      tag: 4.0.12
+      tag: master_5a7f8e490956e8065e28d235ca18be753932c78g
       ## Specify a imagePullPolicy
       ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
       ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
