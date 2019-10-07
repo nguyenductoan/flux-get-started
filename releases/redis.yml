@@ -11,7 +11,7 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
-    version: 8.0.1
+    version: 8.0.2
   values:
     ## Global Docker image parameters
     ## Please, note that this will override the image parameters, including dependencies, configured to use the global value
