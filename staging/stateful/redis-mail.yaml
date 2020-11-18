@@ -19,7 +19,7 @@ spec:
       #upgrade:
         #remediation:
           #retries: 3
-  interval: 1h0m0s
+  interval: 1m0s
   # Default values
   # https://github.com/bitnami/charts/blob/master/bitnami/redis/values.yaml
   values:
