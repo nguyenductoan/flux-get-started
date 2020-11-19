@@ -21,11 +21,10 @@ spec:
         namespace: flux-system
   interval: 1m0s
   valuesFrom:
-  - secretKeyRef:
-      name: ex-rails-app-vault
-      namespace: staging
-      key: values.yaml
-      optional: true
+  - kind: Secret
+    name: ex-rails-app-vault
+    valuesKey: values.yaml
+    optional: true
   values:
     image:
       repository: ex-rails-app
