@@ -22,7 +22,7 @@ spec:
   values:
     image:
       repository: ex-rails-app
-      tag: 0.1
+      tag: '0.1'
       pullPolicy: IfNotPresent
 
     # Override name of the chart
