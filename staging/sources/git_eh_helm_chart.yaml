@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: git@github.com:Thinkei/eh-helm-chart.git
+  url: ssh://git@github.com:Thinkei/eh-helm-chart.git
   ref:
     branch: develop
   secretRef:
