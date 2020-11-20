@@ -9,7 +9,7 @@ spec:
     #disableWait: true
     disableHooks: true
     remediation:
-      retries: 1
+      retries: 3
       remediateLastFailure: true
   upgrade:
     disableHooks: true
