@@ -6,7 +6,7 @@ metadata:
 spec:
   releaseName: ex-rails-app
   install:
-    disableWait: true
+    #disableWait: true
     remediation:
       retries: 3
       remediateLastFailure: true
