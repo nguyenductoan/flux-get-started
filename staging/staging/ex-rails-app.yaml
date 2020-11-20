@@ -48,7 +48,7 @@ spec:
     procs:
     - name: web
       command: ["bundle", "exec", "puma", "-p", "80", "-C", "config/puma.rb"]
-      replicas: 2
+      replicas: 3
       probe:
         enabled: true
         port: 80
