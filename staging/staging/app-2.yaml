@@ -39,7 +39,7 @@ spec:
     nameOverride: ""
 
     # Override fully qualified app name
-    fullnameOverride: "ex-rails-app"
+    fullnameOverride: "app-2"
 
     additionalAnnotations:
       owner: "squad-platform"
