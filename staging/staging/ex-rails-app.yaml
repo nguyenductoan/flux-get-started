@@ -7,10 +7,12 @@ spec:
   releaseName: ex-rails-app
   install:
     #disableWait: true
+    disableHooks: true
     remediation:
       retries: 3
       remediateLastFailure: true
   upgrade:
+    disableHooks: true
     remediation:
       retries: 3
       remediateLastFailure: true
