@@ -5,8 +5,8 @@ metadata:
   namespace: staging
 spec:
   releaseName: ex-rails-app
-  disableWait: true
   install:
+    disableWait: true
     remediation:
       retries: 3
       remediateLastFailure: true
