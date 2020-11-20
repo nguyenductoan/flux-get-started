@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: slack-test-alert
+  namespace: flux-system
+spec:
+  type: slack
+  channel: test-alertmanager
+  secretRef:
+    name: slack-test-alert-url
