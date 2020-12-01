@@ -939,7 +939,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/fluxcd/source-controller:v0.4.1
+        image: ghcr.io/fluxcd/source-controller:v0.3
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -1285,7 +1285,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/fluxcd/kustomize-controller:v0.4.0
+        image: ghcr.io/fluxcd/kustomize-controller:v0.3
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -1770,7 +1770,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/fluxcd/helm-controller:v0.4.1
+        image: ghcr.io/fluxcd/helm-controller:v0.3
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -2344,7 +2344,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/fluxcd/notification-controller:v0.4.0
+        image: ghcr.io/fluxcd/notification-controller:v0.3
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
