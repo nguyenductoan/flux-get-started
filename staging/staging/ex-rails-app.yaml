@@ -135,7 +135,7 @@ spec:
       projectSlug: ex-rails-app
 
     env:
-      VAULT_VERSION: 3
+      VAULT_VERSION: 4
       RAILS_ENV: production
       APP_ENV: application
       REDIS_URL: "redis-ex-rails-app.stateful:6379"
