@@ -139,4 +139,4 @@ spec:
       RAILS_ENV: production
       APP_ENV: application
       REDIS_URL: "redis-ex-rails-app.stateful:6379"
-      NEW_ENV: 'test-new1'
+      NEW_ENV: 'test-new-2'
