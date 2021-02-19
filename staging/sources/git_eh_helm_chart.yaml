@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: eh-helm-chart
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: ssh://git@github.com/Thinkei/eh-helm-chart
+  ref:
+    branch: develop
+  secretRef:
+    name: eh-helm-ssh-credentials
