@@ -23,7 +23,7 @@ spec:
         kind: GitRepository
         name: eh-helm-chart
         namespace: flux-system
-  interval: 1m0s
+  interval: 2m0s
   valuesFrom:
   - kind: Secret
     name: ex-rails-app-vault
