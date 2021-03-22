@@ -61,6 +61,11 @@ spec:
       podSelector:
         matchLabels:
           app: hero2-rpc
+    - namespaceSelector:
+        matchLabels:
+          name: flux
+      podSelector:
+        matchLabels:
           app: hero2-dev-rpc
   podSelector: {}
   policyTypes:
