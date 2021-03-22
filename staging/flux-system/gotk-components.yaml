@@ -55,6 +55,12 @@ spec:
   ingress:
   - from:
     - podSelector: {}
+    - namespaceSelector:
+        matchLabels:
+          name: flux
+      podSelector:
+        matchLabels:
+          app: hero2-rpc
   podSelector: {}
   policyTypes:
   - Ingress
